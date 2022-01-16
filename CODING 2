@@ -1,0 +1,52 @@
+package myARRAY;
+
+import java.util.Scanner;
+
+public class mark {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double average;
+		double mark,mark1,mark2;
+		
+		Scanner sc = new Scanner (System.in);
+ 
+		
+		do { 
+			
+		System.out.println("Enter the mark(0-100) for student 1:");
+		mark = sc.nextInt();
+		
+		if ((mark <0) || (mark >100)) {;
+		System.out.println("INVALID INPUT,TRY AGAIN...");
+		}
+		
+		}while ((mark < 0) || (mark> 100));
+		
+		do {
+			System.out.println("Enter the mark (0-100) for student 2: ");
+			mark1 = sc.nextInt();
+			
+			if((mark1 <0) || (mark1 >100)){
+					System.out.println("INVALID INPUT,TRY AGAIN...");
+			}
+			}while ((mark1<0) || (mark1>100));
+		
+		do {
+			System.out.println("Enter the mark (0-100) for student 3: ");
+			mark2 = sc.nextInt();
+			
+			if((mark2 <0) || (mark2>100)){
+				System.out.println("INVALID INPUT,TRY AGAIN...");
+			}
+		}while ((mark2<0) || (mark2>100));
+
+		 average =(mark+mark1+mark2)/3;
+		
+	System.out.printf("The average is: "+ "%.2f",average);
+		
+	
+		
+	}
+
+}
